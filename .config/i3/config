@@ -232,4 +232,4 @@ set $red                 #ff0000
 exec otd-daemon
 exec polybar example -r &
 exec kitty
-exec_always feh --bg-scale /home/creui/wp.jpg
+exec_always feh --bg-scale /home/creui/Pictures/wp.jpg
