@@ -15,7 +15,7 @@ export PATH=$HOME/.local/bin:$PATH
 
 # start x.org if on tty1 and not started already
 if [[ "$(tty)" = "/dev/tty1" ]]; then
-    pgrep i3 || sx
+    pgrep i3 || startx
 fi
 
 # If not running interactively, don't do anything
