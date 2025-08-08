@@ -1,0 +1,49 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+* {
+    background-color:      Black;
+    border-color:          White;
+    text-color:            White;
+    font:            "SF Pro Display 8";
+}
+
+window {
+    anchor:     north;
+    location:   north;
+    height:     35px;
+    width:      100%;
+    padding:    10px;
+    children:   [ horibox ];
+}
+
+horibox {
+    orientation: horizontal;
+    children:   [ entry, listview ];
+}
+
+listview {
+    layout:     horizontal;
+    spacing:    5px;
+    lines:      100;
+}
+
+entry {
+    expand:     false;
+    width:      10em;
+}
+
+element {
+    text-color: #808080;
+}
+
+element selected {
+    text-color: White;
+}
+
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
+}
